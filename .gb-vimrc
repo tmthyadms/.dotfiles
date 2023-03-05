@@ -1,0 +1,41 @@
+set nocompatible
+" set backspace=2
+set backspace=indent,eol,start
+
+set number relativenumber
+
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set autoindent
+set smartindent
+
+set incsearch
+set scrolloff=5
+
+let mapleader=" "
+
+inoremap kj <Esc>
+
+nmap <leader>w :w<CR>
+nmap <leader>q :wq<CR>
+nmap Q :q!<CR>
+
+nmap <leader>v :source ~/.gb-vimrc
+
+nmap <leader>s :set hlsearch!<CR>
+nnoremap <silent> <CR> :nohlsearch<CR><CR>
+
+imap <A-h> <C-o>h
+imap <A-j> <C-o>j
+imap <A-k> <C-o>k
+imap <A-l> <C-o>l
+
+nmap <leader>- :split<CR>
+nmap <leader>\ :vsplit<CR>
+
+nmap <S-h> <C-w>h
+nmap <S-j> <C-w>j
+nmap <S-k> <C-w>k
+nmap <S-l> <C-w>l

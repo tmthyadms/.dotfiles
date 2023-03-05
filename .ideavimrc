@@ -1,0 +1,75 @@
+"" -- Suggested options --
+" Don't use Ex mode, use Q for formatting.
+" map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+set number relativenumber
+
+set incsearch
+set scrolloff=5
+
+set idearefactormode=keep
+set ideajoin
+set ideastatusicon=gray
+
+let mapleader=" "
+
+inoremap kj <Esc>
+
+nmap <leader>w :w<CR>
+nmap <leader>q :wq<CR>
+nmap Q :q!<CR>
+
+nmap <leader>v :source ~\.ideavimrc<CR>
+
+nmap <leader>s :set hlsearch!<CR>
+nnoremap <silent> <CR> :nohlsearch<CR><CR>
+
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
+
+imap <A-h> <C-o>h
+imap <A-j> <C-o>j
+imap <A-k> <C-o>k
+imap <A-l> <C-o>l
+
+nmap <leader>- :split<CR>
+nmap <leader>\ :vsplit<CR>
+
+nmap <S-h> <C-w>h
+nmap <S-j> <C-w>j
+nmap <S-k> <C-w>k
+nmap <S-l> <C-w>l
+
+nmap <leader>h <Action>(PreviousTab)
+nmap <leader>l <Action>(NextTab)
+nmap <leader>r <Action>(RefactoringMenu)
+nmap ge <Action>(GotoNextError)
+nmap gh <Action>(ShowErrorDescription)
+nmap <leader>d <Action>(QuickJavaDoc)
+nmap <leader>i <Action>(QuickImplementations)
+nmap <leader>p <Action>(ReformatCode)
+nmap <C-j> <Action>(ActivateTerminalToolWindow)
+nmap <C-r> <Action>(Run)
+nmap <leader>z <Action>(ToggleZenMode)
+
+set surround
+set commentary
+set highlightedyank
+set multiple-cursors
+set NERDTree
+
+nmap <leader>f :NERDTreeToggle<CR>
