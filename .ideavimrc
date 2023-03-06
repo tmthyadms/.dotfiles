@@ -63,7 +63,7 @@ nmap <leader>d <Action>(QuickJavaDoc)
 nmap <leader>i <Action>(QuickImplementations)
 nmap <leader>p <Action>(ReformatCode)
 nmap <C-j> <Action>(ActivateTerminalToolWindow)
-nmap <C-r> <Action>(Run)
+nmap <leader><leader> <Action>(Run)
 nmap <leader>z <Action>(ToggleZenMode)
 
 set surround
