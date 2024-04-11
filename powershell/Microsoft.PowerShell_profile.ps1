@@ -1,8 +1,8 @@
 # Custom {{{ 
 
 . "$HOME\Documents\PowerShell\Custom\aliases.ps1"
-. "$HOME\Documents\PowerShell\Custom\aliases.ps1"
-# . "$env:OneDrive\Documents\PowerShell\Custom\functions.ps1"
+. "$HOME\Documents\PowerShell\Custom\functions.ps1"
+# . "$env:OneDrive\Documents\PowerShell\Custom\aliases.ps1"
 # . "$env:OneDrive\Documents\PowerShell\Custom\functions.ps1"
 
 # }}}
